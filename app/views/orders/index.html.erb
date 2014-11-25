@@ -1,0 +1,39 @@
+
+<div id="calendar">
+  <!-- <h2 id="month">
+    <%= link_to "<", :month => (@date.beginning_of_month-1).strftime("%Y-%m-%d") %>
+    <%=h @date.strftime("%B %Y") %>
+    <%= link_to ">", :month => (@date.end_of_month+1).strftime("%Y-%m-%d") %>
+  </h2> -->
+  <%= calendar_for @orders, :year => @date.year, :month => @date.month do |t| %>
+    <%= t.head('DOM','SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB') %>
+    <%= t.day do |day, orders| %>
+      <%= day.day %>
+      <% orders.each do |order| %><br>
+        <%= link_to h(order.employee.name), order %>
+        <%= link_to 'Editar', edit_order_path(order) %> | <%= link_to 'Deletar', order, method: :delete, data: { confirm: 'Tem certeza?' } %>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
+<br>
+<!-- <table class="table">
+        <thead>
+          <tr>
+            <th> Nome </th>
+            <th> Quantidade </th>          
+          </tr>
+        </thead>
+        <tbody>
+          <% @employees.each do |e| %>
+            <tr>              
+              <td> <%= e.name %></td>
+              <td> <%= e.total_pedidos_mes %> </td>
+            </tr>
+          <%end%>          
+        </tbody>        
+      </table>
+ -->
+<!-- <hr>
+  Total .: <%= @orders.size %>
+<hr> -->

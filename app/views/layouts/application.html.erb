@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Badeco</title>
+    
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+   
+    <%= javascript_include_tag 'application',  'data-turbolinks-track' => true %>
+  
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+      <a class="brand" href="/orders">Badeco</a>
+      <ul class="nav">
+        <li class="active"><%= link_to ' Pedido', new_order_path %></li>
+        <li><%= link_to ' Funcionário', employees_path %></li>
+        <li><%= link_to ' Prato', dishes_path %></li>
+        <!-- <li><%= link_to 'Total Mês' , orders_path%></li> -->
+      </ul>
+    </div>
+  </div>
+
+   <header class="jumbotron subhead">
+      <div class="topo">
+        <h1>Badeco </h1>
+        <p>Sistema para Controle de Marmitas</p>          
+      </div>
+    </header>
+  
+  <%= yield %>
+
+  </body>
+</html>

@@ -1,0 +1,12 @@
+div#formulario{
+	width: 70%;	
+	height: 440px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 3px 3px 3px rgba(0,0,0,.5);
+	padding-top: 20px;
+	margin-top: 40px;	
+	background-color: rgba(0,0,0,.0);
+	border: 1px solid #ddd;
+}
+

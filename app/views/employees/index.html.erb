@@ -1,0 +1,62 @@
+<br>
+<h1 align="left">Lista de Funcionários</h1><br>
+<button class="btn" type="button"><%= link_to 'Cadastro', new_employee_path %></button>
+<button class="btn" type="button"><%= link_to 'Voltar',  orders_path%></button>
+<button type="button" data-toggle="modal" data-target="#myModal" class="btn">Marmita</button>
+
+
+<br>
+<hr>
+
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Quantidade de marmita por funcionário</h3>
+  </div>
+  <div class="modal-body">    
+      <table class="table">
+        <thead>
+          <tr>
+            <th> Nome </th>
+            <th> Quantidade </th>          
+          </tr>
+        </thead>
+        <tbody>
+          <% @employees.each do |e| %>
+            <tr>              
+              <td> <%= e.name %></td>
+              <td> <%= e.total_pedidos_mes %> </td>
+            </tr>
+          <%end%>          
+        </tbody>        
+      </table>
+    Total.:<%= @employees.size %>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>    
+  </div>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @employees.each do |employee| %>
+      <tr>
+        <td><%= employee.name %></td>
+        <td><%= link_to 'Show', employee %></td>
+        <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
+        <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+
+
