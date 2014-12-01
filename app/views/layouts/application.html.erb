@@ -26,33 +26,33 @@
    
   
     <div class="row-fluid">
-      <div class="span2" >  
+     
+      <div class="span2 " >  
         <ul class="menu">
           <li><a href="/">Home</a></li>
-          <li><a href="#">Cadastro</i></a>
-          <ul class="menu">
-          <li><a href="/employees/new">Funcionário</a></li>
-          <li><a href="/dishes/new">Pratos</a></li>
-          <li><a href="/orders/new">Pedidos</a></li>
-          </ul>
+          <li><a class="menusub" href="#" >Cadastro</i></a>
+         <!--  <ul class="menu"> -->
+          <li ><a class = "sub" href="/employees/new">Funcionário</a></li>
+          <li><a class = "sub" href="/dishes/new">Pratos</a></li>
+          <li><a class = "sub" href="/orders/new">Pedidos</a></li>
+          <!-- </ul> -->
           </li>          
-          <li><a href="#">Consultas</a>
-          <ul class="menu">
-          <li><a href="/employees">Funcionário</a></li>
-          <li><a href="/dishes">Pratos</a></li>
-          <li><a href="/orders">Pedidos</a></li>
-          </ul>
+          <li><a class="menusub" href="#">Consultas</a>
+         <!--  <ul class="menu"> -->
+          <li><a class = "sub" href="/employees">Funcionário</a></li>
+          <li><a class = "sub" href="/dishes">Pratos</a></li>
+          <li><a class = "sub" href="/orders">Pedidos</a></li>
+          <!-- </ul> -->
           </li>    
           <li><a href="/homes/show">Total Mês</a></li>      
         </ul>
       </div>
+     
       <div class="span10 ">
         <div class="corpo">
           <%= yield %>
-        </div>
-        
-      </div>
+        </div>        
+      </div>      
     </div>
-   
   </body>
 </html>

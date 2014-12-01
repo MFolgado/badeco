@@ -16,7 +16,7 @@
 
 .total{
   margin-left: 880px;
-
+  color: red;
 }
 
 /*------------------------------paginate-----------------------*/
@@ -173,13 +173,19 @@ hr {
   font-size: 25px;
 }
 
-
+.sub{
+  margin-left: 20px;
+}
+.menusub{
+  background-color: #1D83B3;
+  
+}
 .menu{
 margin: 0;
 padding: 0;
 border: 1px #ccc solid;
-
 }
+
 .menu ul{ 
 list-style: none;
 border: 1px #ccc solid;
@@ -214,7 +220,7 @@ text-align: left;
 display: block;
 text-decoration: none;
 padding: 7px;
-background-color: #fff;
+/*background-color: #fff;*/
 font-family:Verdana, Arial, Helvetica, sans-serif;
 font-size: 17px;
 text-align: center;
