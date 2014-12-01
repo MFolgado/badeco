@@ -5,6 +5,8 @@ class EmployeesController < ApplicationController
   # GET /employees.json
   def index
     @employees = Employee.all
+    @employees = Employee.paginate(:page => params[:page], :per_page => 7)
+
   end
 
   # GET /employees/1

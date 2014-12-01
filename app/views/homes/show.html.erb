@@ -16,5 +16,8 @@
   </tbody>        
 </table>
 <hr>
-Total.:<%= @orders.size %>
+<div class="digg_pagination" >
+  <%= will_paginate @employees, :page_links => false %>
+  <span class="total">Total.:<%= @orders.size %> </span> 
 </div>
+

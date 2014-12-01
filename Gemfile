@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem "watu_table_builder", :require => "table_builder"
 
+gem "will_paginate"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'

@@ -8,6 +8,7 @@ class OrdersController < ApplicationController
     @date = params[:month] ? Date.parse(params[:month]) : Date.today
     @qtde = 0
     @employees = Employee.all
+    @orders = Order.paginate(:page => params[:page], :per_page => 7)
   end
 
   # GET /orders/1
