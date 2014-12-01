@@ -8,29 +8,50 @@
     <%= javascript_include_tag 'application',  'data-turbolinks-track' => true %>
   
     <%= csrf_meta_tags %>
+
+
   </head>
-
+ 
   <body>
-    <div class="navbar navbar-fixed-top navbar-inverse">
-    <div class="navbar-inner">
-      <a class="brand" href="/orders">Badeco</a>
-      <ul class="nav">
-        <li class="active"><%= link_to ' Pedido', new_order_path %></li>
-        <li><%= link_to ' Funcionário', employees_path %></li>
-        <li><%= link_to ' Prato', dishes_path %></li>
-        <!-- <li><%= link_to 'Total Mês' , orders_path%></li> -->
-      </ul>
-    </div>
-  </div>
-
-   <header class="jumbotron subhead">
-      <div class="topo">
-        <h1>Badeco </h1>
-        <p>Sistema para Controle de Marmitas</p>          
+ 
+  <!-- <div class="container"> -->
+    <div class="row">
+      <div class="span12 topo">
+        <h1> Badeco </h1>
+        <p>Sistema para Controle de Marmita</p>
       </div>
-    </header>
-  
-  <%= yield %>
+    </div>
+  <!-- </div> -->
 
+   
+    <div class="row-fluid">
+      <div class="span2" >  
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="#">Cadastro</i></a>
+          <ul class="menu">
+          <li><a href="/employees/new">Funcionário</a></li>
+          <li><a href="/dishes/new">Pratos</a></li>
+          <li><a href="/orders/new">Pedidos</a></li>
+          </ul>
+          </li>          
+          <li><a href="#">Consultas</a>
+          <ul class="menu">
+          <li><a href="/employees">Funcionário</a></li>
+          <li><a href="/dishes">Pratos</a></li>
+          <li><a href="/orders">Pedidos</a></li>
+          </ul>
+          </li>    
+          <li><a href="/homes/show">Total Mês</a></li>      
+        </ul>
+      </div>
+      <div class="span10 ">
+        <div class="corpo">
+          <%= yield %>
+        </div>
+        
+      </div>
+    </div>
+   
   </body>
 </html>

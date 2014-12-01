@@ -1,9 +1,4 @@
-<br>
-<h1>Lista de Pratos</h1>
-<br>
-<button class="btn" type="button"><%= link_to 'Cadastro', new_dish_path %></button>
-<button class="btn" type="button"><%= link_to 'Voltar',  orders_path%></button>
-<hr>
+<h4>Pratos</h4><hr>
 <table class="table">
   <thead>
     <tr>
@@ -15,8 +10,7 @@
   <tbody>
     <% @dishes.each do |dish| %>
       <tr>
-        <td><%= dish.name %></td>
-        <td><%= link_to 'Show', dish %></td>
+        <td><%= dish.name %></td>   
         <td><%= link_to 'Edit', edit_dish_path(dish) %></td>
         <td><%= link_to 'Destroy', dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

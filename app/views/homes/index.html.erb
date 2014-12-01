@@ -1,0 +1,20 @@
+<div id="calendar" class="calend">
+  <h4 id="month">
+    <!-- 
+    <%= link_to "<", :month => (@date.beginning_of_month-1).strftime("%Y-%m-%d") %>
+     -->
+    <%=h @date.strftime("%B %Y") %>
+    <!-- 
+    <%= link_to ">", :month => (@date.end_of_month+1).strftime("%Y-%m-%d") %> -->
+  </h4>  
+  <%= calendar_for @orders, :year => @date.year, :month => @date.month do |t| %>
+    <%= t.head('DOM','SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB') %>
+    <%= t.day do |day, orders| %>
+      <%= day.day %>
+      <% orders.each do |order| %><br>
+        <%= link_to h(order.employee.name), order %>
+        <%= link_to 'Editar', edit_order_path(order) %> <%= link_to 'Deletar', order, method: :delete, data: { confirm: 'Tem certeza?' } %>
+      <% end %>
+    <% end %>
+  <% end %>
+</div> 

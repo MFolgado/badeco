@@ -13,379 +13,126 @@
  *= require_tree .
  *= require_self
  */
+
+
 hr {
       color: #f00;
       background-color: #ccc;
       height: 1px;
     }
 
-
-
-.fundo{
-	background-color: black;	
-	font-family: arial, sans-serif;
-	background-image: url("../img/fundo.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: 0px 220px; 
-}
-
-
-
-ul#menu-img li {
-	list-style: none;
-	float: left;
-	display: inline-block;
-	border: 8px solid white;
-	box-shadow: 1px 1px 4px black;
-	border-radius: 5px 5px 5px 5px;
-	text-decoration: none;
-	margin-top: 20px;
-	margin-left: 5px;
-	padding: 20px;
-	width: 280px;
-	margin-left: 20px;
-}
-
-ul#menu-img li a{
-  text-decoration: none;
-  color: #888;
-  font-family: arial;
-  font-weight: bold;  
-}
-
-ul#menu-img li img{
-	width: 250px;
-	height: 250px;
-	padding: 0px;
-	margin-left: 10px;
-}
-
-ul#menu-img li a span  {
-	opacity: 0;
-	margin-left: 0px;
-	font-size: 18pt;
-	font-family: arial , sans-serif;
-	margin-top: 5px;	
-}
-
-
-ul#menu-img li a:hover span  {
-	opacity: 1;
-
-}
-
 .corpo{
-	width: 100%;
-	height: 300px;
-	background-color: #fff;
-	box-shadow: 3px 3px 3px rgba(0,0,0,.6);
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0px;
-	position: relative;
-	
+  width: 97%;  
+  border: 2px #ccc solid;
+  padding: 10px;
+  height: auto;
+  
+}
+.calend{
+  padding: 0px;
+  margin-left: 0px;
 }
 
 .topo{
-	width: 100%;
-	height: 40%;
-	margin-top: 18px;	
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#1D83B3), color-stop(100%,#235156));
+  background-color: #ccc;
+  padding: 0px;
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 25px;
+  height: 160px;
 }
 
 .topo h1{
-	font-size: 50pt;
-	font-family: arial, sans-serif;
-	margin-top: 0px;
-	color:#fff;	
-	text-shadow: 3px 3px  rgba(0,0,0,.5);
+  font-size: 50pt;
+  font-family: arial, sans-serif;
+  margin-top: 45px;
+  margin-left: 75px;
+  color:#fff; 
+  text-shadow: 3px 3px  rgba(0,0,0,.5);
 }
 
 .topo p{
-	color: #fff;
-	text-shadow: 3px 3px  rgba(0,0,0,.5);
-}
-
-div#formulario{
-  border-radius: 5px;
-}
-
-/* Footer
--------------------------------------------------- */
-
-.footer {
-  padding: 70px 0;
-  margin-top: 70px;
-  border-top: 1px solid #e5e5e5;
-  background-color: #f5f5f5;
-}
-.footer p {
-  margin-bottom: 0;
-  color: #777;
-}
-.footer-links {
-  margin: 10px 0;
-}
-.footer-links li {
-  display: inline;
-  padding: 0 2px;
-}
-.footer-links li:first-child {
-  padding-left: 0;
-}
-
-/* Base class
-------------------------- */
-.jumbotron {
-  position: relative;
-  padding: 40px 0;
-  margin-top: 30px;
-  color: #1D83B3;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
-  background: #1D83B3; /* Old browsers */
-  background: -moz-linear-gradient(45deg,  #1D83B3 0%, #235156 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#1D83B3), color-stop(100%,#235156)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(45deg,  #1D83B3 0%,#235156 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(45deg,  #1D83B3 0%,#235156 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(45deg,  #1D83B3 0%,#235156 100%); /* IE10+ */
-  background: linear-gradient(45deg,  #1D83B3 0%,#235156 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1D83B3', endColorstr='#235156',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-          box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-}
-.jumbotron h1 {
-  font-size: 80px;
-  font-weight: bold;
-  letter-spacing: -1px;
-  line-height: 1;
-  margin-left: 30px;
-}
-.jumbotron p {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1.25;
-  margin-bottom: 30px;
-  margin-left: 40px;
-}
-
-/* Link styles (used on .masthead-links as well) */
-.jumbotron a {
   color: #fff;
-  color: rgba(255,255,255,.5);
-  -webkit-transition: all .2s ease-in-out;
-     -moz-transition: all .2s ease-in-out;
-          transition: all .2s ease-in-out;
-}
-.jumbotron a:hover {
-  color: #fff;
-  text-shadow: 0 0 10px rgba(255,255,255,.25);
-}
-
-/* Download button */
-.masthead .btn {
-  padding: 19px 24px;
-  font-size: 24px;
-  font-weight: 200;
-  color: #fff; /* redeclare to override the `.jumbotron a` */
-  border: 0;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-  -webkit-transition: none;
-     -moz-transition: none;
-          transition: none;
-}
-.masthead .btn:hover {
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-     -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-          box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-}
-.masthead .btn:active {
-  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
-     -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
-          box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+  text-shadow: 3px 3px  rgba(0,0,0,.5);
+  margin-left: 75px;
+  font-size: 25px;
 }
 
 
-/* Pattern overlay
-------------------------- */
-.jumbotron .container {
-  position: relative;
-  z-index: 2;
-}
-.jumbotron:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url(img/fundo.jpg) repeat center center;
-  opacity: .4;
-}
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1) {
-
-  .jumbotron:after {
-    background-size: 150px 150px;
-  }
+.menu{
+margin: 0;
+padding: 0;
+border: 1px #ccc solid;
 
 }
-
-/* Masthead (docs home)
-------------------------- */
-.masthead {
-  padding: 70px 0 80px;
-  margin-bottom: 0;
-  color: #fff;
+.menu ul{ 
+list-style: none;
+border: 1px #ccc solid;
+text-align: left;
 }
-.masthead h1 {
-  font-size: 120px;
-  line-height: 1;
-  letter-spacing: -2px;
-}
-.masthead p {
-  font-size: 40px;
-  font-weight: 200;
-  line-height: 1.25;
-}
-
-/* Textual links in masthead */
-.masthead-links {
-  margin: 0;
-  list-style: none;
-}
-.masthead-links li {
-  display: inline;
-  padding: 0 10px;
-  color: rgba(255,255,255,.25);
-}
-
-/* Social proof buttons from GitHub & Twitter */
-.bs-docs-social {
-  padding: 15px 0;
-  text-align: center;
-  background-color: #f5f5f5;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #ddd;
-}
-
-/* Quick links on Home */
-.bs-docs-social-buttons {
-  margin-left: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-}
-.bs-docs-social-buttons li {
-  display: inline-block;
-  padding: 5px 8px;
-  line-height: 1;
-  *display: inline;
-  *zoom: 1;
-}
-
-/* Subhead (other pages)
-------------------------- */
-.subhead {
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+.menu li{
+width: 100%;
+height: auto; 
+padding: 0;
+margin-bottom: 0;
+position: relative;
+border: 1px #ccc solid;
+text-align: left;
 
 }
-.subhead h1 {
-  font-size: 60px;
-}
-.subhead p {
-  margin-bottom: 20px;
-}
-.subhead .navbar {
-  display: none;
-}
-
-/*
-
-menu
-
-*/
-
-
-/* Sidenav for Docs
--------------------------------------------------- */
-
-.bs-docs-sidenav {
-  width: 228px;
-  margin: 30px 0 0;
-  padding: 0;
-  background-color: #fff;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
-     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
-          box-shadow: 0 1px 4px rgba(0,0,0,.065);
-}
-.bs-docs-sidenav > li > a {
-  display: block;
-  width: 190px \9;
-  margin: 0 0 -1px;
-  padding: 8px 14px;
-  border: 1px solid #e5e5e5;
-}
-.bs-docs-sidenav > li:first-child > a {
-  -webkit-border-radius: 6px 6px 0 0;
-     -moz-border-radius: 6px 6px 0 0;
-          border-radius: 6px 6px 0 0;
-}
-.bs-docs-sidenav > li:last-child > a {
-  -webkit-border-radius: 0 0 6px 6px;
-     -moz-border-radius: 0 0 6px 6px;
-          border-radius: 0 0 6px 6px;
-}
-.bs-docs-sidenav > .active > a {
-  position: relative;
-  z-index: 2;
-  padding: 9px 15px;
-  border: 0;
-  text-shadow: 0 1px 0 rgba(0,0,0,.15);
-  -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
-     -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
-          box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
-}
-/* Chevrons */
-.bs-docs-sidenav .icon-chevron-right {
-  float: right;
-  margin-top: 2px;
-  margin-right: -6px;
-  opacity: .25;
-}
-.bs-docs-sidenav > li > a:hover {
-  background-color: #f5f5f5;
-}
-.bs-docs-sidenav a:hover .icon-chevron-right {
-  opacity: .5;
-}
-.bs-docs-sidenav .active .icon-chevron-right,
-.bs-docs-sidenav .active a:hover .icon-chevron-right {
-  background-image: url(img/glyphicons-halflings-white.png);
-  opacity: 1;
-}
-.bs-docs-sidenav.affix {
-  top: 40px;
-}
-.bs-docs-sidenav.affix-bottom {
-  position: absolute;
-  top: auto;
-  bottom: 270px;
+.menu li ul{
+width: 180px;
+height: auto;
+padding: 0;
+margin: 0;
+display: none;
+position: absolute;
+left: 180px;
+top: 0;
+border: 1px #ccc solid;
+text-align: left;
 }
 
-/*--------------------------------------------------- rodapé----------------------------------------------------*/
+/*nível inferior do menu com display: none*/
 
+.menu a{
+display: block;
+text-decoration: none;
+padding: 7px;
+background-color: #fff;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size: 17px;
+text-align: center;
+font-weight: 400;
+color: #000;
+text-align: left;
+
+}
+.menu a:hover{
+background-color: #1D83B3;
+text-decoration: none;
+color: #FFFFFF;
+text-align: left;
+}
+
+/* hack para o IE não criar margens\*/ 
+* html ul li { float: left; height: 1%; } 
+* html ul li a { height: 1%; } 
+/*End */ 
+
+.menu li:hover ul, li.over ul{
+display: block;
+margin-left: 25px;
+text-align: left;
+}
+
+/*mostra nível inferior ao passar o cursor*/
+
+.menu li.btnultimo{
+border-bottom: none;
+text-align: left;
+
+
+}
 

@@ -12,22 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :employee_id %><br>
+    <h4>Funcionário</h4>
     <%= f.select :employee_id, 
                   Employee.all.collect { |p| [ p.name , p.id ] }, 
                   {include_blank: "Escolha um funcionário"} %>
   </div>
   <div class="field">
-    <%= f.label :dish_id %><br>
+    <h4>Prato</h4>
     <%= f.select :dish_id,
                   Dish.all.collect {|p| [p.name, p.id]},{
                   include_blank:"Escolha um prato"} %>
   </div>
   <div class="field">
-    <%= f.label :date %><br>
+   <h4>Data</h4>
     <%= f.text_field :date , :type => "date" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Salvar'%>
   </div>
 <% end %>

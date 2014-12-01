@@ -301,6 +301,7 @@ a:hover {
 
 .span10 {
   width: 780px;
+  
 }
 
 .span9 {
@@ -332,7 +333,8 @@ a:hover {
 }
 
 .span2 {
-  width: 140px;
+  width: 140px;  
+  
 }
 
 .span1 {
