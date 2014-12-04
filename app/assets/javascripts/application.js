@@ -14,8 +14,10 @@
 //= require jquery_ujs
 //= require widgets
 //= require prettify
+//= require bootstrap
 //= require bootstrap-transition
 //= require bootstrap-modal
+
 
 
 

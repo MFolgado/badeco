@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Badeco</title>
-    
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-   
-    <%= javascript_include_tag 'application',  'data-turbolinks-track' => true %>
-  
-    <%= csrf_meta_tags %>
-
-
-  </head>
+    <title>Badeco</title>    
  
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>     
+    <%= javascript_include_tag 'application',  'data-turbolinks-track' => true %>  
+    <%= csrf_meta_tags %>
+    
+  </head> 
   <body>
  
   <!-- <div class="container"> -->
@@ -25,28 +21,44 @@
 
    
   
-    <div class="row-fluid">
-     
-      <div class="span2 " >  
-        <ul class="menu">
-          <li><a href="/">Home</a></li>
-          <li><a class="menusub" href="#" >Cadastro</i></a>
-         <!--  <ul class="menu"> -->
-          <li ><a class = "sub" href="/employees/new">Funcionário</a></li>
-          <li><a class = "sub" href="/dishes/new">Pratos</a></li>
-          <li><a class = "sub" href="/orders/new">Pedidos</a></li>
-          <!-- </ul> -->
-          </li>          
-          <li><a class="menusub" href="#">Consultas</a>
-         <!--  <ul class="menu"> -->
-          <li><a class = "sub" href="/employees">Funcionário</a></li>
-          <li><a class = "sub" href="/dishes">Pratos</a></li>
-          <li><a class = "sub" href="/orders">Pedidos</a></li>
-          <!-- </ul> -->
-          </li>    
-          <li><a href="/homes/show">Total Mês</a></li>      
-        </ul>
+    <div class="row-fluid">     
+      <div class="span2 " >         
+            <div class="accordion menu " id="accordion2">
+              <div class="accordion-group">
+                 <a href="/" class="menu menusub">Home</a>
+                <div class="accordion-heading">                 
+                  <a class="menu " data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                    Cadastro  
+                  </a>
+                </div>
+                <div id="collapseOne" class="accordion-body collapse out">
+                  <div class="">
+                    <a href="/employees/new" class="sub">Funcionário</a>
+                    <a href="/dishes/new" class="sub">Pratos</a>
+                    <a href="/orders/new" class="sub">Pedidos</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class=" menu" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                   Consulta
+                  </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse">
+                  <div class="">
+                    <a href="/employees" class="sub">Funcionário</a>
+                    <a href="/dishes" class="sub">Pratos</a>
+                    <a href="/orders" class="sub">Pedidos</a>
+                  </div>
+                </div>
+              </div>
+              <a href="/homes/show" class="menu">Total Mês</a>     
+            </div>                                     
       </div>
+   
+
+
      
       <div class="span10 ">
         <div class="corpo">

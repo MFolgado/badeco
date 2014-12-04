@@ -174,16 +174,20 @@ hr {
 }
 
 .sub{
-  margin-left: 20px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+
 }
-.menusub{
-  background-color: #1D83B3;
-  
-}
+
 .menu{
 margin: 0;
 padding: 0;
 border: 1px #ccc solid;
+}
+.menusub{
+  margin-bottom: 3px;
+  
 }
 
 .menu ul{ 
@@ -219,7 +223,7 @@ text-align: left;
 .menu a{
 display: block;
 text-decoration: none;
-padding: 7px;
+padding: 10px;
 /*background-color: #fff;*/
 font-family:Verdana, Arial, Helvetica, sans-serif;
 font-size: 17px;
