@@ -7,6 +7,7 @@ class EmployeesController < ApplicationController
     @employees = Employee.all
     @employees = Employee.paginate(:page => params[:page], :per_page => 7)
 
+
   end
 
   # GET /employees/1
@@ -30,7 +31,7 @@ class EmployeesController < ApplicationController
 
     respond_to do |format|
       if @employee.save
-        format.html { redirect_to @employee, notice: 'Employee was successfully created.' }
+        format.html { redirect_to @employee, notice:  'Employee was successfully created.' }
         format.json { render :show, status: :created, location: @employee }
       else
         format.html { render :new }
