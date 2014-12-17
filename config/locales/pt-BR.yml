@@ -1,11 +1,23 @@
 pt-BR:
   activerecord:
-    models:
-      Employee: Funcionário
+    employees:
+      messages:
+        created: 'Cadastro realizado com sucesso!'
+    errors:
+      models:
+        forms:
+          field_errors: 'Problemas encontrados'
+        employee:
+          attributes:
+            name:
+              blank: 'Deve ser informado!'            
+      Employee: 
+        one:    'Funcionário'
+        others: 'Funcionários'
     attributes:
       employee:
-        name: Nome
-      
+        name: Nome 
+
   date:
     abbr_day_names:
     - Dom
@@ -41,6 +53,7 @@ pt-BR:
       default: ! '%d/%m/%Y'
       long: ! '%d de %B de %Y'
       short: ! '%d de %B'
+      home: ! '%B %Y'
     month_names:
     -
     - Janeiro

@@ -6,6 +6,11 @@ gem "will_paginate"
 
 gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
 
+gem 'metronic', git: 'git@bitbucket.org:bradoc/panda_metronic.git'
+
+gem 'maskedinput-rails', '1.3.1.0'
+
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'

@@ -4,10 +4,8 @@ class EmployeesController < ApplicationController
   # GET /employees
   # GET /employees.json
   def index
-    @employees = Employee.all
-    @employees = Employee.paginate(:page => params[:page], :per_page => 7)
-
-
+    # @employees = Employee.all
+    @employees = Employee.paginate(:page => params[:page], :per_page => 7).order('name asc')
   end
 
   # GET /employees/1
@@ -31,7 +29,7 @@ class EmployeesController < ApplicationController
 
     respond_to do |format|
       if @employee.save
-        format.html { redirect_to @employee, notice:  'Employee was successfully created.' }
+        format.html { redirect_to @employee, notice:  I18n.t('.employees.messages.created') }
         format.json { render :show, status: :created, location: @employee }
       else
         format.html { render :new }
