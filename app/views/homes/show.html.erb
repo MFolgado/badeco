@@ -1,4 +1,10 @@
-<h4>Marmitas <%= l @date, format: :home %></h4><hr>
+<h4>Marmitas <%= l @date, format: :home %></h4>  
+<hr>
+<%= form_tag home_path, method: :get do %>
+  <h5>Funcinário</h5>
+  <%= text_field_tag :search, params[:search].present? ? params[:search] : nil  %><br>
+  <%= submit_tag 'Buscar' %>
+<% end %>
 <table class="table">
   <thead>
     <tr>
@@ -18,6 +24,6 @@
 <hr>
 <div class="digg_pagination" >
   <%= will_paginate @employees, :page_links => false %>
-  <span class="total">Total.:<%= @orders.size %> </span> 
+  <span class="total">Total.:<%= @orders.count %> </span> 
 </div>
 
