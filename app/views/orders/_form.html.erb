@@ -15,19 +15,19 @@
     <h4>Funcionário</h4>
     <%= f.select :employee_id, 
                   Employee.all.collect { |p| [ p.name , p.id ] }, 
-                  {include_blank: "Escolha um funcionário"} %>
+                  {include_blank: t('employee_select')} %>
   </div>
   <div class="field">
     <h4>Prato</h4>
     <%= f.select :dish_id,
                   Dish.all.collect {|p| [p.name, p.id]},{
-                  include_blank:"Escolha um prato"} %>
+                  include_blank:t('dish_select')} %>
   </div>
   <div class="field">
    <h4>Data</h4>
     <%= f.text_field :date , :type => "date" %>
   </div>
   <div class="actions">
-    <%= f.submit 'Salvar'%>
+    <%= f.submit t(:save)%>
   </div>
 <% end %>

@@ -1,4 +1,35 @@
 pt-BR:
+  edit:    'Editar'
+  destroy: 'Excluir'
+  save:    'Salvar'
+  employee_select:  'Escolha um Funcionário'
+  dish_select:      'Escolha um prato'    
+  homes:
+    index:
+      confirmation: 'Tem certeza que deseja excluir?'
+  dishes:
+    index:
+      confirmation: 'Tem certeza que deseja excluir?'
+  orders:
+    index:
+      confirmation: 'Tem certeza que deseja excluir?'  
+  employees:  
+    index:
+      confirmation: 'Tem certeza que deseja excluir?'
+    messages: 
+      created:    'Funcionário cadastrado com sucesso!'
+      updated:    'Funcionário atualizado com sucesso!'
+      destroyed:  'Funcionário excluido com sucesso!'
+  dishes:
+    messages:
+      created:    'Prato cadastrado com sucesso!'
+      updated:    'Prato atualizado com sucesso!'
+      destroyed:  'Prato excluido com sucesso!'
+  orders:
+    messages:
+      created:    'Pedido cadastrado com sucesso!'
+      updated:    'Pedido atualizado com sucesso!'
+      destroyed:  'Pedido excluido com sucesso!'
   activerecord:
     employees:
       messages:
@@ -16,7 +47,11 @@ pt-BR:
         others: 'Funcionários'
     attributes:
       employee:
-        name: Nome 
+        name: Nome
+  will_paginate:
+    previous_label: 'Anterior'
+    next_label: 'Próxima'
+    page_gap: '…'
 
   date:
     abbr_day_names:

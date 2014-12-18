@@ -10,7 +10,8 @@
       <%= day.day %>
       <% orders.each do |order| %><br>
         <%= link_to h(order.employee.name), order %>
-        <%= link_to 'Editar', edit_order_path(order) %> <%= link_to 'Deletar', order, method: :delete, data: { confirm: 'Tem certeza?' } %>
+        <%= link_to t(:edit), edit_order_path(order) %> 
+       <%= link_to t(:destroy), order,  method: :delete, data: { :confirm => t('.confirmation') } %>
       <% end %>
     <% end %>
   <% end %>

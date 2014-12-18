@@ -14,8 +14,8 @@
         <td><%= order.employee.name %></td>
         <td><%= order.dish.name %></td>
         <td><%= order.date %></td>
-        <td><%= link_to 'Edit', edit_order_path(order) %></td>
-        <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t(:edit), edit_order_path(order) %></td>
+        <td><%= link_to t(:destroy), order, method: :delete, data: { :confirm => ('.confirmation') } %></td>
       </tr>
     <% end %>
   </tbody>
