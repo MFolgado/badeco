@@ -5,6 +5,7 @@
   <%= text_field_tag :search, params[:search].present? ? params[:search] : nil  %><br>
   <%= submit_tag 'Buscar' %>
 <% end %>
+
 <table class="table">
   <thead>
     <tr>
@@ -21,9 +22,8 @@
     <%end%>          
   </tbody>        
 </table>
+
 <hr>
 <div class="digg_pagination" >
-  <%= will_paginate @employees, :page_links => false %>
-  <span class="total">Total.:<%= @orders.count %> </span> 
+  <%= will_paginate @employees, :page_links => false %> <span class="total">Total.:<%= @orders.count %> / R$.:<%= @orders.count*10 %></span>
 </div>
-

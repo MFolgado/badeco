@@ -24,8 +24,9 @@
     <div class="row-fluid">     
       <div class="span2 " >         
             <div class="accordion menu " id="accordion2">
-              <div class="accordion-group">
-                 <a href="/" class="menu menusub">Home</a>
+              <div class="accordion-group">                
+                 <a href="/" class="menu menusub"> <i class="fa  fa-calendar"></i> Calendário </a>
+
                 <div class="accordion-heading">                 
                   <a class="menu " data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
                     Cadastro  
@@ -33,9 +34,9 @@
                 </div>
                 <div id="collapseOne" class="accordion-body collapse out">
                   <div class="">
-                    <a href="/employees/new" class="sub">Funcionário</a>
-                    <a href="/dishes/new" class="sub">Pratos</a>
-                    <a href="/orders/new" class="sub">Pedidos</a>
+                    <a href="/employees/new" class="sub"> <i class="fa fa-users"></i> Funcionários </a>
+                    <a href="/dishes/new" class="sub"> <i class="fa fa-users"></i> Pratos</a>
+                    <a href="/orders/new" class="sub"> <i class="fa fa-users"></i> Pedidos</a>
                   </div>
                 </div>
               </div>
@@ -47,19 +48,15 @@
                 </div>
                 <div id="collapseTwo" class="accordion-body collapse">
                   <div class="">
-                    <a href="/employees" class="sub">Funcionário</a>
-                    <a href="/dishes" class="sub">Pratos</a>
-                    <a href="/orders" class="sub">Pedidos</a>
+                    <a href="/employees" class="sub"> <i class="fa fa-users"></i> Funcionário</a>
+                    <a href="/dishes" class="sub"> <i class="fa fa-users"></i> Pratos</a>
+                    <a href="/orders" class="sub"> <i class="fa fa-users"></i> Pedidos</a>
                   </div>
                 </div>
               </div>
-              <a href="/homes/show" class="menu">Total Mês</a>     
+              <a href="/homes/show" class="menu"> <i class="fa fa-plus-square-o"></i> Total Mês</a>     
             </div>                                     
       </div>
-   
-
-
-     
       <div class="span10 ">
         <div class="corpo">
           <%= yield %>
